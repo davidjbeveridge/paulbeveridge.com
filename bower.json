@@ -1,0 +1,19 @@
+{
+  "name": "paulbeveridge.com",
+  "version": "0.0.0",
+  "authors": [
+    "David Beveridge <davidjbeveridge@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}
