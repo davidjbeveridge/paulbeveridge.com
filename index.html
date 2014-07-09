@@ -8,9 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Paul Beveridge, Graphic Designer</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
     <style type="text/css" media="all">
       body {
         text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+
+      a, a:active, a:visited {
+        text-decoration: none;
+        color: #999;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: #000;
       }
 
       #brand {
@@ -21,12 +33,12 @@
         min-width: 200px;
       }
 
-      #comingsoon {
+      .fadein {
         display: none;
-        text-indent: -9999px;
-        background: center center no-repeat url(/assets/images/coming-soon.png);
-        height: 44px;
-        min-width: 200px;
+      }
+
+      .fadein a {
+        font-size: 31pt;
       }
     </style>
     <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
@@ -35,13 +47,14 @@
 
   <body>
     <h1 id="brand">Paul Beveridge</h1>
-    <p id="comingsoon">Coming Soon</p>
+    <div class="fadein">
+      <a href="https://dribbble.com/paulbeveridge">See my work</a>
+    </div>
 
     <script type="text/javascript" charset="utf-8">
       (function($){
         $(function(){
-          console.log('loaded');
-          $('#comingsoon').delay(700).fadeIn(1000);
+          $('.fadein').delay(700).fadeIn(1000);
         });
       })(jQuery);
     </script>
